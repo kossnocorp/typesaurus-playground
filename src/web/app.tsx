@@ -1,8 +1,7 @@
 import { useOnAll } from "@typesaurus/preact";
 import { useState } from "preact/hooks";
 import { Doc } from "typesaurus";
-import { addTodo, removeTodo, toggleTodo } from "../db/actions";
-import { db, Todo } from "../db/index";
+import { addTodo, removeTodo, toggleTodo, db, Todo } from "../db/index";
 
 export function App() {
   const [todos] = useOnAll(db.todos);
